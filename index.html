@@ -618,10 +618,7 @@
         msg += '\n*Total:* $' + total + '\n';
         msg += '*Reserva (50%):* $' + deposit + ' por Zelle al (919) 771-5951\n';
         if (detalles) msg += '\n*Detalles:* ' + detalles + '\n';
-        var a = document.createElement('a');
-        a.href = 'https://wa.me/19197715951?text=' + encodeURIComponent(msg);
-        a.target = '_top';
-        a.click();
+        window.location.href = 'https://wa.me/19197715951?text=' + encodeURIComponent(msg);
     }
     
     
